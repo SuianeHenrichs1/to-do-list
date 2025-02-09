@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap');
+
+/* Resetar margem e padding padrão, definir box-sizing como border-box e definir fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo para o elemento body */
+body {
+    background-color:#ffa599;
+    background-image:
+    radial-gradient(at 56% 95%, hsla(265,96%,71%,1) 0px, transparent 50%),
+    radial-gradient(at 29% 51%, hsla(223,79%,68%,1) 0px, transparent 50%),
+    radial-gradient(at 59% 20%, hsla(318,89%,72%,1) 0px, transparent 50%),
+    radial-gradient(at 73% 8%, hsla(269,74%,76%,1) 0px, transparent 50%),
+    radial-gradient(at 18% 61%, hsla(323,81%,63%,1) 0px, transparent 50%),
+    radial-gradient(at 61% 86%, hsla(307,87%,75%,1) 0px, transparent 50%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para o título */
+h1 {
+    font-size: 2.7rem;
+    font-weight:bold;
+    color: #ffffffb9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o container principal */
+.container-pai {
+    margin: 0 auto;
+    padding: 30px 70px;
+    border: 1px solid #f0eded;
+    background-color: #5b2ace13;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;   
+    max-width: 90%;
+    padding: 30px 5%;
+    min-width: 300px;
+    opacity: 100%;    
+}
+
+/* Estilo para o container de nova tarefa */
+.nova-tarefa-container {
+    background-color: #ffffff4f;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 30px 50px;
+    border-radius: 10px;   
+    display: flex;
+    margin-top: 50px;
+}
+
+/* Estilo para o input de nova tarefa */
+.nova-tarefa-input {
+    flex: 3;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc3c3;
+    border-radius: 10px;
+    font-weight: 500;  
+    outline: none;     
+}
+
+/* Estilo para o input de nova tarefa quando focado */
+.nova-tarefa-input:focus {
+    border-color: #ab7cb8;
+}
+
+/* Estilo para o botão de nova tarefa */
+.nova-tarefa-button {
+    flex: 1;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(90deg, #968ee2 0%, #d55dda 100%);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    height: 100%;
+    width: 100%;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+/* Estilo para o botão de nova tarefa quando hover */
+.nova-tarefa-button:hover {
+    background: linear-gradient(90deg, #d55dda 0%, #968ee2 100%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o container de tarefas */
+.tarefas-container {
+    background-color: #ffffff4f;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
+    padding: 30px 50px;
+    border-radius: 10px;
+    width: 100%;   
+    caret-color: transparent;
+}
+
+/* Estilo para os links de apresentação */
+.apresentacao-links {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-top: 1.3rem;
+    gap: 20px; 
+}
+
+/* Estilo para o subtítulo dos links de apresentação */
+.apresentacao-links-subtitulo {
+    font-size: 1.5rem;
+    text-align: left; 
+    margin-bottom: 0.6rem;
+    color: #ffffffb9;
+}
+
+/* Estilo para o container de links */
+.links-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    width: 100%; 
+}
+
+/* Estilo para os links de apresentação */
+.apresentacao-links_link {
+    background-color: #a16ebb;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;    
+    gap: 30px; 
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: rgb(238, 228, 228);
+}
+
+/* Estilo para os links de apresentação quando hover */
+.apresentacao-links_link:hover {
+    background-color: #7c73cc;
+    color: white;
+    transition: 0.5s;   
+}
+
+/* Estilo para as imagens dos links de apresentação */
+.apresentacao-links_link img {
+    width: 1.688rem; 
+    height: 1.688rem; 
+}
+
+/* Estilo para os itens de tarefas */
+.tarefas-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    color: white;
+}
+
+/* Estilo para os ícones dos itens de tarefas quando hover */
+.tarefas-item i:hover {
+    cursor: pointer;
+}
+
+/* Estilo para os ícones dos itens de tarefas */
+.tarefas-item i {
+    background: linear-gradient(90deg, #968ee2 0%, #d55dda 100%);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* Estilo para os inputs com erro */
+.error {
+    border: 0px solid red !important;
+}
+
+/* Estilo para os placeholders dos inputs com erro */
+.error::placeholder {
+    color: red;
+}
+
+/* Estilo para as tarefas completadas */
+.completed {
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+        
